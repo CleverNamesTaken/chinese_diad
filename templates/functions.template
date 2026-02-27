@@ -1,0 +1,13 @@
+// {{ function_name }}
+extern "C" UINT64 {{ function_name }}Fwd(PARAMS) {
+    #ifdef DEBUG
+        dbgf("{{ function_name }} called");
+    #endif
+    
+    if (MUTEX("Global\\\\{{ function_name }}__0")) {
+        // Put your code here...
+    }
+
+    return PROXY_FUNCTION("{{ function_name }}");
+}
+

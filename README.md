@@ -12,6 +12,12 @@ This tool was largely inspired by the [PlugX triad](https://www.sentinelone.com/
 
 DLL hijacking is an older technique and likely won't go away until DLL signing is enforced.
 
+## Dependencies
+
+```
+sudo apt install -y mingw-w64-x86-64-dev g++-mingw-w64-x86-64
+```
+
 ## Usage
 
 1. Identify the DLL that you want to proxy and pull it down.
@@ -64,6 +70,36 @@ copy \Windows\system32\nslookup.exe .
 .\nslookup.exe
 	#You should expect to be greeted by MSF, but your nslookup will also run.
 ```
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Top contributors:
+
+<a href="https://github.com/CleverNamesTaken/chinese_diad/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CleverNamesTaken/chinese_diad" alt="contrib.rocks image" />
+</a>
+
+
+
+## License
+
+Distributed under the Apache License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## References
 

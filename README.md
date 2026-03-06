@@ -107,4 +107,3 @@ Distributed under the Apache License. See `LICENSE.txt` for more information.
 - github.com/Pascal-0x90/sideloadr
 - github.com/tothi/dll-hijack-by-proxying
 - https://hijacklibs.net/
-apt install python3-pefile
